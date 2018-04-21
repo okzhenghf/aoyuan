@@ -1,0 +1,630 @@
+ul,li{
+	list-style: none;
+	display: block;
+}
+p{
+	font-size: 15px;
+	color: rgb(102, 102, 102);
+}
+span{
+	font-size: 30px;
+}
+
+.container{
+	margin: auto;
+}
+#app{
+	width: 100%;
+	overflow: hidden;
+  
+}
+.page1{
+	width: 100%;
+	overflow: hidden;
+	position: fixed;	
+	z-index: 1;
+}
+ .el-carousel__item img{
+   width: 100%;
+   height: 100%;
+ }
+ .el-carousel__button {
+    background-color: blue !important; 
+}
+/* page2 */
+.page2{
+	margin-top: 15rem;
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	z-index: 12;
+	top:40rem;
+	left: 0;
+}
+/* page-one */
+.page2 .one{
+	width: 100%;
+	height: 60rem;
+	background: url('../image/34.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+}
+.page2 .one .container{
+	display: flex;
+	align-items:center;/*垂直居中*/
+	width: 95%;
+	height: 100%;
+	
+}
+.page2 .one .container .left{
+	width: 25%;
+	height: 65%;
+	border: 1px solid #ccc; 
+	text-align: center;
+}
+.page2 .one .container .left .img-box .img .under{
+transform: scale(1, 1);
+    transition: transform 1s; 
+}
+.page2 .one .container .left:hover .img-box .img .under{
+    transform: scale(1.1, 1.1);
+    transition: transform 1s; 
+}
+.page2 .one .container .left h1{
+	font-size: 2.5rem;
+}
+.page2 .one .container .left .img-box{
+	margin:  2rem auto;
+	width: 17rem;
+	height: 14rem;
+	overflow: hidden;
+	
+}
+.page2 .one .container .left .img-box .img{
+	width: 100%;
+	height: 100%;
+
+	text-align: center;
+	background: url('../img/48.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+}
+
+.page2 .one .container .left .img-box .img .on{
+	width: 100%;
+	height: 50%
+}
+.page2 .one .container .left .img-box .img .under{
+	width: 100%;
+	height: 50%;
+	background: #000;
+	opacity: .8;
+	text-align: left;
+}
+.page2 .one .container .left .img-box .img .under p{
+	color: #fff;
+	font-size: .5rem;
+	padding-left: 1rem;
+	
+}
+
+.page2 .one .container .left .img-box .img .under p:nth-child(1){
+	font-size: 1rem;
+	padding-top: 1rem;
+}
+.page2 .one .container .left .img-box .img .under p:nth-child(3){
+	line-height: 2px;
+}
+.page2 .one .container .right{
+	width: 75%;
+	height: 65%;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+.page2 .one .container .right li{
+   width: 25%;
+   height: 100%;
+  
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.page2 .one .container .right li .logo{
+	width: 12rem;
+	height: 9rem;
+	background: url('../img/1.png') ;
+	background-repeat: no-repeat;
+
+   
+}
+.page2 .one .container .right li:nth-child(2) .logo{
+	background: url('../img/3.png');
+	background-repeat: no-repeat;  
+}
+.page2 .one .container .right li:nth-child(3) .logo{
+	background: url('../img/2.png');
+	background-repeat: no-repeat;
+}
+.page2 .one .container .right li .line{
+	width: 20%;
+	height: 1px;
+	background: #000;
+	transition: width 1s;
+}
+.page2 .one .container .right li button{
+	display: block;
+	width: 100%;
+	height: 3rem;
+	border: 1px solid #ccc;
+	background: rgb(0,0,0,0);
+	margin-top: 4rem;
+}
+.page2 .one .container .right li button:hover{
+	background: rgb(1, 128, 255);
+	color: #fff;
+}
+.page2 .one .container .right li p{
+	font-size: 1.5rem;
+	line-height: 1rem;
+}
+.page2 .one .container .right li p:hover{
+	color: rgb(1, 128, 255);
+}
+.page2 .one .container .right li:hover .line{
+	width: 80%;
+	transition: width 1s;
+	background: rgb(1, 128, 255);
+}
+/* page-two */
+.page2 .two{
+	overflow: hidden;
+	width: 100%;
+	height: 60rem;
+	background: #fff;
+}
+.page2 .two .container{
+	width: 90%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.page2 .two .container .line{
+	width: 1px;
+	height: 15rem;
+	background: #ccc;
+}
+.page2 .two .container .title-img{
+	width: 100%;
+	height: 120rem;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.page2 .two .container .title-img li{
+	width: 23%;
+	height: 12rem;	
+	overflow: hidden;
+}
+.page2 .two .container .title-img li img{
+	width: 100%;
+	height: 100%;
+	transform: scale(1, 1);
+	transition: transform 1s;
+}
+.page2 .two .container .title-img li:hover img{
+	transform: scale(1.1, 1.1);
+	transition: transform 1s;
+}
+/* page-three */
+.page2 .three{
+	overflow: hidden;
+	width: 100%;
+	height: 30rem;
+	background:  url('../image/33.jpg')no-repeat;
+	 background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+    text-align: center;
+   
+}
+.page2 .three .container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.page2 .three .container .logo{
+	margin-top:5rem;
+	margin-bottom: 3rem; 
+	width: 15rem;
+	height: 5rem;
+	background: red;
+}
+.page2 .three .container .content p{
+	color: #fff;
+}
+/* page-four */
+.page2 .four{
+	display: block;
+	width: 100%;
+	height: 60rem;
+	background: #fff;
+}
+.page2 .four .container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.page2 .four .container .title{
+	margin-top: -4rem;
+	z-index: 10; 
+	width: 90%;
+	height: 8rem;
+	text-align: center;
+	line-height: 6rem;
+	background: #fff;
+	box-shadow: 0px 4px 15px  #ccc ;
+}
+.page2 .four .container ul{
+	margin-top: 4rem;
+	width: 80%;
+	height: 50rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0;
+}
+.page2 .four .container ul li{
+	width: 32%;
+	height: 47%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transform: scale(1, 1);
+	transition: transform 2s;
+}
+.page2 .four .container ul li:hover{
+	box-shadow: 0px 0px 25px #ccc;
+	transition: box-shadow: 3s;
+	transform: scale(1.01, 1.01);
+	transition: transform 2s;
+}
+.page2 .four .container ul li .logo{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	width: 12rem;
+	height: 12rem;
+	border-radius: 50%;
+	background: rgb(70,239,53);
+	box-shadow: 0px 0px 15px #ccc;
+	text-align: center;
+}
+.page2 .four .container ul li .logo img{
+	width: 50%;
+	height: 50%;
+	margin-top: 3rem;
+}
+.page2 .four .container ul li:nth-child(2) .logo{
+    background: rgb(45,211,252);
+}
+.page2 .four .container ul li:nth-child(3) .logo{
+background: rgb(1,128,255)
+}
+.page2 .four .container ul li:nth-child(4) .logo{
+background: rgb(189,85,259)
+}
+.page2 .four .container ul li:nth-child(5) .logo{
+background: rgb(252,108,108)
+}
+.page2 .four .container ul li:nth-child(6) .logo{
+background: rgb(250,190,15)
+}
+.page2 .four .container ul li .content{
+	text-align: center;
+}
+.page2 .four .container ul li .content p{
+	font-size: 1rem;
+	line-height: 1rem;
+}
+.page2 .four .container ul li .content p:nth-child(1){
+    font-size: 1.1rem;
+}
+/* page-five */
+.page2 .five{
+	width: 100%;
+	height: 30rem;
+	background: rgb(1,128,255);
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.page2 .five .container{
+	width: 80%;
+	height: 70%;
+	
+	
+}
+.page2 .five .container .box{
+    width: 100%;
+    height: 100%;
+   display: flex;
+    
+}
+.page2 .five .container .box .left{
+	width: 55%;
+	height: 100%;
+}
+.page2 .five .container .box .right{
+	width: 45%;
+	height: 100%;
+	background: #fff;
+}
+/* page2-six */
+.page2 .six{
+	overflow: hidden;
+   width: 100%;
+   height: 12rem;
+   background: #fff;
+   border-bottom:1px solid #ccc; 
+}
+.page2 .six .container{
+	width: 100%;
+	height: 100%；
+}
+.page2 .six .container .list{
+	margin: 4rem auto;
+	width: 60%;
+	
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+}
+.page2 .six .container .list li{
+	font-size: 2rem;
+	padding: 1rem 2rem;
+}
+.page2 .six .container .list li:hover{
+	border-bottom:1px solid rgb(1,128,255);
+	color: rgb(1,128,255); 
+}
+.page2 .seven{
+	overflow: hidden;
+	width: 100%;
+	height: 55rem;
+	background: #fff;
+}
+.page2 .seven .list{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.page2 .seven .list li{
+	width: 100%;
+	height: 10rem;
+	border-bottom: #ccc 1px solid;
+	display: flex;
+	justify-content: center;
+}
+.page2 .seven .list li .list-box{
+	width: 80%;
+	height: 100%;
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.page2 .seven .list li .list-box .left{
+	width: 20%;
+	height: 8rem;
+	overflow: hidden;
+	
+}
+.page2 .seven .list li .list-box .left img{
+	width: 100%;
+	height: 100%;
+	transform: scale(1, 1);
+	transition: transform 1s;
+}
+.page2 .seven .list li .list-box .left:hover img{
+	transform: scale(1.1, 1.1);
+	transition: transform 1s;
+}
+.page2 .seven .list li .list-box .right{
+	width: 70%;
+	height: 6rem;
+	display: flex;
+	justify-content: space-between;
+
+
+}
+.page2 .seven .list li .list-box .right .left{
+	width: 80%;
+	height: 100%;
+}
+
+.page2 .seven .list li .list-box .right .right{
+	width: 20%;
+	height: 100%;
+}
+.page2 .seven .list li .list-box .right .left p:nth-child(1){
+	font-size: 3rem;
+	margin: 0;
+}
+.page2 .seven .list li .list-box .right:hover .left p:nth-child(1){
+	color:rgb(1,128,255) 
+}
+.page2 .seven .list li .list-box .right .left p:nth-child(2){
+	width: 90%;
+	font-size: .5rem;
+   overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  position: relative;
+  left: 0rem;
+  transition: left 2s;
+  
+}
+.page2 .seven .list li .list-box .right:hover .left p:nth-child(2){
+	left: 2rem;
+	transition: left 2s;
+	
+}
+.page2 .seven .list li .list-box .right .right .show{
+	width: 5rem;
+	height: 1rem;
+	position: relative;
+	top: 2rem;
+	left: 5rem;
+	opacity: 0;
+	transition: opacity 2s;
+	transition: left 2s;
+	
+}
+.page2 .seven .list li .list-box .right:hover .right .show{
+	opacity: 1;
+	transition: opacity 2s;
+	left: 3rem;
+	transition: left 2s;
+}
+.page2 .seven .list li .list-box .right .right .arrow{
+	display: block;
+   width: 1rem;
+   height: 1rem;
+   border-top:2px solid #ccc;
+   border-right: 2px solid #ccc;
+   transform: rotate(45deg) ;
+   position: relative;
+   top: 2rem;
+  right: 4rem;
+  transition: right 2s;
+ 
+}
+.page2 .seven .list li .list-box .right:hover .right .arrow{
+	 right: 1.5rem;
+	 transition: right 2s;
+}
+/* page2-eight */
+.page2 .eight{
+	overflow: hidden;
+	width: 100%;
+	height: 15rem;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1px solid #ccc; 
+}
+.page2 .eight .container{
+	width: 70%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.page2 .eight .container .box{
+	text-align: center;
+}
+.page2 .eight .container .box span{
+	font-size: 6rem;
+}
+.page2 .eight .container .box:nth-child(2){
+	border-bottom: 2px solid #000;
+}
+/* page2-nine */
+.page2 .nine{
+	width: 100%;
+	height: 30rem;
+	background: #fff;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1px solid #ccc;
+}
+.page2 .nine .container{
+	width: 80%;
+	height: 70%;
+	
+}
+.page2 .nine .container .row {
+	width: 100%;
+	height: 100%;
+}
+.page2 .nine .container ul li{
+	padding: 0;
+	width: 16%;
+	height: 50%;
+}
+.page2 .nine .container ul li img{
+	width: 100%;
+	height: 100%
+}
+.page2 .nine .container ul li:hover{
+	box-shadow: 0px 0px 20px #ccc;
+}
+/* page2-ten */
+.page2 .ten{
+	width: 100%;
+	height: 50rem;
+	overflow: hidden;
+	background: #fff;
+	display: flex;
+	align-items: center;
+}
+.page2 .ten .container{
+	width: 85%;
+	height: 80%;
+	
+	text-align: center;
+
+}
+.page2 .ten .container .foot{
+	padding: 0;
+   width: 100%;
+   height: 80%;
+   
+   justify-content: space-between;
+   display: flex;
+}
+.page2 .ten .container .foot li{
+	width: 27%;
+	height: 100%;	
+}
+.page2 .ten .container .foot li .img-box{
+	overflow: hidden;
+	width: 100%;
+	height: 45%;
+	margin-top: 4rem;
+	margin-bottom: 2rem;	
+}
+.page2 .ten .container .foot li .img-box:hover img{
+	transform: scale(1.1, 1.1);
+	transition: transform 1s;
+}
+.page2 .ten .container .foot li .img-box img{
+	width: 100%;
+	height: 100%;
+	transform: scale(1, 1);
+	transition: transform 1s;
+}
+.page2 .ten .container .foot li p{
+	font-size: .5rem;
+	line-height: 1rem;
+}
+
+
+
